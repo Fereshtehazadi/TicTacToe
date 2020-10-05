@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 15px;
+        }
+    </style>
+<title>Tic Tac Toe</title>
+
+<script>
+    var nexPlayer= "x" ;
+    function cellClick(cell){
+//console.log(":"+cell.innerHTML +":");
+        if(cell.innerHTML == ""){
+
+
+            if (nexPlayer=="o"){
+                    cell.innerHTML="o"; 
+                    nexPlayer = "x";
+            }
+            else if (nexPlayer=="x"){
+                    cell.innerHTML="x"; 
+                    nexPlayer="o";
+        
+            }
+          
+        
+        }
+        
+    }
+
+</script>
+
+</head>
+
+
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<table>
+<tr>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+
+</tr>
+<tr>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+
+</tr>
+<tr>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+    <td onclick="cellClick(this)"></td>
+
+</tr>
+</table>
+
+</body>
+
+
+
+</html>
